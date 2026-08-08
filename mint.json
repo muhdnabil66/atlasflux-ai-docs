@@ -1,0 +1,91 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "AtlasFlux AI Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#FF3333",
+    "light": "#FF5A5A",
+    "dark": "#CC0000"
+  },
+  "topbarCtaButton": {
+    "name": "Open AtlasFlux",
+    "url": "https://ai.atlasflux.my"
+  },
+  "topbarLinks": [
+    {
+      "name": "Updates",
+      "url": "https://ai.atlasflux.my/updates"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": ["introduction"]
+    },
+    {
+      "group": "Getting Started",
+      "pages": ["getting-started"]
+    },
+    {
+      "group": "AI Chat",
+      "pages": [
+        "ai-chat",
+        "previews",
+        "agent-mode"
+      ]
+    },
+    {
+      "group": "Community",
+      "pages": ["community"]
+    },
+    {
+      "group": "Account",
+      "pages": [
+        "account",
+        "preferences",
+        "security",
+        "data-export",
+        "archived",
+        "artifacts"
+      ]
+    },
+    {
+      "group": "AI Tools",
+      "pages": [
+        "tools",
+        "image-generation",
+        "video-generation",
+        "file-uploads"
+      ]
+    },
+    {
+      "group": "Pricing",
+      "pages": [
+        "pricing",
+        "credit-system",
+        "credits",
+        "purchases"
+      ]
+    },
+    {
+      "group": "Reference",
+      "pages": [
+        "faq",
+        "troubleshooting",
+        "limitations",
+        "support",
+        "model-catalog",
+        "pwa",
+        "legal",
+        "updates"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/muhdnabil66/atlasflux-ai-docs"
+  }
+}

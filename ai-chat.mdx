@@ -1,0 +1,101 @@
+---
+title: "AI Chat"
+description: "Your universal AI assistant with file attachments, automatic model selection, and rich features."
+---
+
+# AI Chat – Your Universal AI Assistant
+
+The AI Chat is the core of AtlasFlux. It supports text conversations with file attachments, automatic model selection, and a rich set of features to tailor the AI's behaviour to your specific needs.
+
+## Sending Messages
+
+Type your message, attach files if needed, and press **Enter** or click **Send**. Use **Shift+Enter** for line breaks. **You can attach up to 20 files per message** (max 5 images, each ≤20MB; documents ≤50MB). Images larger than 1 MB are automatically compressed to improve performance.
+
+## File & Image Support
+
+Attach files via the **Plus (➕)** button in the input area. Supported formats and their limits **per message** are detailed below:
+
+- **Images**: PNG, JPG, WEBP – up to 20 MB each, max 5 per message.
+- **PDF**: max 50 MB, text is automatically extracted.
+- **DOCX/DOC**: max 50 MB, text extracted via mammoth.
+- **XLSX/XLS**: max 50 MB, data converted to CSV.
+- **Text/code files**: TXT, JSON, JS, PY, HTML, CSS, etc. – max 10 MB.
+- **Binary files**: download only, no preview.
+- **Total files per message: up to 20** (including images).
+
+## Auto vs Manual Model Selection
+
+By default, **Auto mode** intelligently selects the optimal model based on your request and any attached files (vision models for images, file-support models for documents). Toggle to **Manual mode** to choose any LLM from the full catalog. In Manual mode, Agent Mode is disabled; the selected model handles everything directly.
+
+## Context Window & Token Limits
+
+Each model has a maximum context length (e.g., 128K tokens). AtlasFlux tracks cumulative tokens used within a session. When you reach 80% of the limit, a warning banner appears. At 100%, the input is disabled and you must start a new chat. This prevents errors and wasted credits.
+
+## Message Actions
+
+Hover over any assistant message to reveal the action buttons, which provide the following options:
+
+- 📋 **Copy** – copy plain text to your clipboard.
+- 🗑️ **Delete** – remove the message from the conversation.
+- 🔄 **Redo** – regenerate the response.
+- 👍 **Like / 👎 Dislike** – provide feedback.
+- 🔊 **Read Aloud** – text-to-speech with a selectable AI voice.
+- 📚 **Sources** – view web pages used (when web search is triggered).
+- 📝 **Expand** – open the full message in a modal.
+- ✏️ **Edit** – for user messages, edit and resend.
+- 🚩 **Flag** – save to [Archived](https://ai.atlasflux.my/account/archived) for later reference.
+- ▶️ **Continue** – if the response was stopped, resume generation.
+
+Click the square **Stop button (⏹)** to halt generation at any time.
+
+## Agent Mode
+
+Agent Mode is AtlasFlux's most powerful mode. The AI autonomously plans and executes complex tasks using web search, file reading, and code generation. It displays each step (searching, reading, writing code) in a live timeline. **Generated code files are automatically saved to your [Artifacts](https://ai.atlasflux.my/account/artifacts) library.** You're charged **based on actual token usage** — free models cost nothing.
+
+Best for complex programming tasks, multi-step research, and any problem that requires planning and tool use.
+
+## Auto Features
+
+### Auto Web Search
+
+When the **globe toggle** is enabled in the attachment menu, the AI automatically detects if your question requires real-time information. If so, a lightweight web search is performed **at no extra cost** (total remains 1 credit). You can toggle this feature on or off at any time.
+
+### Auto Reasoning
+
+When the **brain toggle** is enabled, the AI adds chain-of-thought reasoning traces **without any extra credit cost**. This works with the same model but adds reasoning traces. This is ideal for complex questions where you want to see the thinking process without paying extra fees. It is compatible with Auto Web Search.
+
+## New Features (May 2026)
+
+### Image Generation Status
+
+While an image is being generated, a shimmer animation with **'Generating image…'** replaces the temporary placeholder, providing a polished, ChatGPT-like experience. The **Stop** button remains available to cancel the generation.
+
+### Video Upload Blocked
+
+To prevent broken previews, video files are not accepted in chat. Selecting a video will show an error toast and the file will be ignored. Supported file types are limited to images, documents, and text/code files.
+
+### Smarter Search Queries
+
+Auto Web Search now automatically refines vague or context-dependent questions into precise search terms using a lightweight AI classification layer. This reduces irrelevant results, especially for follow-up questions.
+
+### ASCII Diagram Formatting
+
+AI responses containing ASCII diagrams now strictly follow formatting rules: monospace characters, perfect alignment, maximum width 58 characters, and wrapped in ```text code blocks. This ensures mobile-safe, correctly rendered diagrams.
+
+### Consistent Source Display
+
+All web sources (including social platforms) are now shown uniformly across the source stack, source pills, and the full sources panel. No more hidden counts or mismatched numbers – you see exactly what the AI used.
+
+## Previews
+
+### HTML/CSS/JS Code Preview
+
+When an assistant message contains HTML, CSS, or JavaScript code, a **Run** button appears. Clicking it opens a preview panel with a **toggle between Live Preview and Code view**. The live preview is safely sandboxed (navigation and form submissions are blocked). The code view shows syntax-highlighted source.
+
+### File Preview
+
+Attached files (PDF, images, documents) can be previewed directly in the chat by clicking on them. A sidebar opens showing the file content, with options to download or delete.
+
+### Source Preview
+
+When web search is used, a source summary appears below the AI response. Click it to open the [Sources panel](https://ai.atlasflux.my/docs#sources), which lists all web pages with favicons, titles, and URLs. Click any source to jump to its details.

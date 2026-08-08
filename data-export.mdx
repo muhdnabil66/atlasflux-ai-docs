@@ -1,0 +1,41 @@
+---
+title: "Data Export & Import"
+description: "Full data portability with secure Atlas Key chat export and import."
+---
+
+# Data Export & Import
+
+AtlasFlux AI provides full data portability. You can export your entire account data or just your chat history, and even import chat history from another account using a secure key system.
+
+## Full Data Export
+
+Request a complete archive of all your data: profiles, chat sessions, messages, generated images, videos, music, voice clones, and all tool histories. The export is compiled into a JSON file and a download link is sent to your email. The link expires after 48 hours.
+
+## Chat Export (Atlas Key)
+
+Export only your chat history (sessions & messages). When you initiate a chat export, a unique **Atlas Key** is generated. This key follows the format `SHA-256 (Secure Hash Algorithm 256-bit)` and is shown to you once. A download link is also sent to your email as a backup. The key is tied to a specific export file and can only be used once. It expires after 48 hours. You cannot import the chat back into the same account that created the key.
+
+## Import Chat (Using Atlas Key)
+
+To import a chat export into your account, you need two things:
+
+- **JSON file** from the original export.
+- **Atlas Key** that was generated with that export.
+
+The system verifies the key (must be unused, unexpired, and from a different account), then validates the file hash. Once validated, all chat sessions and messages are imported into your account. After a successful import, the key is marked as used and cannot be reused.
+
+## Export Key History
+
+You can view all your previously generated Atlas Keys in the Export Key History panel. Keys are displayed in a masked format (e.g., `ATLASFLUX-****-****-****`) for security. The history shows whether a key is active or already used, when it was created, and (if used) when it was used and by whom.
+
+## Import AI Memory
+
+You can import conversation data from other platforms (ChatGPT, Gemini, Claude) to teach the AI about you. Upload a JSON or TXT file containing your conversation history. The system uses an AI model to automatically extract factual statements about you and adds them to your memory, which the AI will use in future chats.
+
+## Delete All Chats & Delete Account
+
+You have the option to permanently delete all your chat sessions at once, or to request full account deletion. Account deletion is a **30-day process**: after requesting, your account is suspended and a confirmation email is sent. You can cancel the deletion by contacting support within those 30 days.
+
+### Delete All Chats
+
+From your account's [Privacy](https://ai.atlasflux.my/account/privacy) section, you can permanently delete all your chat sessions at once. This action cannot be undone. Note that credit logs and generated media are not affected.

@@ -1,0 +1,22 @@
+---
+title: "Agent Mode"
+description: "AtlasFlux's most powerful mode for autonomous task solving with code generation."
+---
+
+# Agent Mode
+
+Agent Mode is AtlasFlux's most powerful mode. The AI autonomously plans and executes complex tasks using web search, file reading, and code generation. It displays each step (searching, reading, writing code) in a live timeline. **Generated code files are automatically saved to your [Artifacts](https://ai.atlasflux.my/account/artifacts) library.** You're charged **based on actual token usage** — free models cost nothing.
+
+## When to use Agent Mode
+
+Best for complex programming tasks, multi-step research, and any problem that requires planning and tool use.
+
+## Long-Running Task Capability
+
+AtlasFlux AI is built on a robust, CPU-optimised infrastructure designed to handle long-running tasks without timeouts. Unlike typical web servers that enforce strict execution limits, our platform can maintain active processing for extended periods – up to several minutes when necessary. This is especially critical for resource-intensive operations such as:
+
+- **AI image generation** – may involve multiple provider API calls and polling
+- **Video generation** – can take 2–5 minutes per request
+- **Agent Mode** – executes complex, multi-step workflows
+
+The system leverages persistent connections and efficient polling mechanisms to ensure that every request completes reliably, regardless of its duration.
