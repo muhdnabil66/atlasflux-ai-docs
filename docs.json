@@ -35,12 +35,9 @@
       "view",
       "chatgpt",
       "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "perplexity"
     ],
-    "display": "header"
+    "display": "toc"
   },
   "navigation": {
     "groups": [
