@@ -1,0 +1,117 @@
+{
+  "theme": "mint",
+  "name": "AtlasFlux AI Documentation",
+  "colors": {
+    "primary": "#FF3333",
+    "light": "#FF5A5A",
+    "dark": "#CC0000"
+  },
+  "favicon": "/atlasicon.webp",
+  "logo": {
+    "light": "/atlasicon.webp",
+    "dark": "/atlasicon.webp"
+  },
+  "navbar": {
+    "links": [
+      {
+        "href": "https://ai.atlasflux.my/updates",
+        "label": "Updates"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open AtlasFlux",
+      "href": "https://ai.atlasflux.my"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/muhdnabil66/atlasflux-ai-docs"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ],
+    "display": "header"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Introduction",
+        "pages": [
+          "introduction"
+        ]
+      },
+      {
+        "group": "Getting Started",
+        "pages": [
+          "getting-started"
+        ]
+      },
+      {
+        "group": "AI Chat",
+        "pages": [
+          "ai-chat",
+          "previews",
+          "agent-mode"
+        ]
+      },
+      {
+        "group": "Community",
+        "pages": [
+          "community"
+        ]
+      },
+      {
+        "group": "Account",
+        "pages": [
+          "account",
+          "preferences",
+          "security",
+          "data-export",
+          "archived",
+          "artifacts"
+        ]
+      },
+      {
+        "group": "AI Tools",
+        "pages": [
+          "tools",
+          "image-generation",
+          "video-generation",
+          "file-uploads"
+        ]
+      },
+      {
+        "group": "Pricing",
+        "pages": [
+          "pricing",
+          "credit-system",
+          "credits",
+          "purchases"
+        ]
+      },
+      {
+        "group": "Reference",
+        "pages": [
+          "faq",
+          "troubleshooting",
+          "limitations",
+          "support",
+          "model-catalog",
+          "pwa",
+          "legal",
+          "updates"
+        ]
+      }
+    ]
+  }
+}
