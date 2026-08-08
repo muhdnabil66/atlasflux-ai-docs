@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "AtlasFlux AI Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/atlasicon.webp",
+    "light": "/atlasicon.webp"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/atlasicon.webp",
   "colors": {
     "primary": "#FF3333",
     "light": "#FF5A5A",
@@ -21,6 +21,18 @@
       "url": "https://ai.atlasflux.my/updates"
     }
   ],
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "assistant",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "grok"
+    ],
+    "display": "header"
+  },
   "navigation": [
     {
       "group": "Introduction",
