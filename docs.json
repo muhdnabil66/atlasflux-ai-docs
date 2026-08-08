@@ -37,7 +37,7 @@
       "claude",
       "perplexity"
     ],
-    "display": "toc"
+    "display": "header"
   },
   "navigation": {
     "groups": [
